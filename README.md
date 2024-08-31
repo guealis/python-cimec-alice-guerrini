@@ -3,7 +3,7 @@ This project analyzes data from an experimental study conducted by Prof. Brian E
 
 For the analysis I tried to replicate the statistical methods described in the book "Statistical Methods for the Social Sciences" (FIFTH EDITION) by Alan Agresti.
 
-The CORRECT FILE to run is anorexia_dat_treat_analysis.py
+### The CORRECT FILE to run is anorexia_dat_treat_analysis.py
 
 ## Overview
 The dataset contains weight measurements (in pounds) taken before and after a fixed treatment period. Participants were randomly assigned to one of three treatment groups:
