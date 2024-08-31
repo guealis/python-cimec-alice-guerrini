@@ -20,9 +20,9 @@ The analysis is divided into two main parts:
   * Computed for weights before and after the experimental period, segmented by treatment group.
   * Includes measures like mean, standard deviation, median, and quartiles.
 ### Visualization:
-  *Plots of response distributions to visually compare the weight changes across different treatment groups.
+  * Plots of response distributions to visually compare the weight changes across different treatment groups.
 ### Repeated Measures ANOVA:
-   *Conducted using the Pingouin statistical package to assess whether there are statistically significant differences in weight change across the three treatment groups.
+  * Conducted using the Pingouin statistical package to assess whether there are statistically significant differences in weight change across the three treatment groups.
 
 ## 2. Focused Analysis on Weight Change
 ### Weight Change Analysis:
