@@ -13,12 +13,12 @@ Original file is located at
 
 #Importing all the necessary libraries to upload the data, do statitics and plots
 
-!pip install pingouin
+# !pip install pingouin  #LP: m
 import pingouin as pg #statistical package
 import pandas as pd
 import numpy as np
 import scipy.stats as stats
-from scipy.stats import ttest_ind, ttest_ind_from_stats
+from scipy.stats import ttest_ind, ttest_ind_from_stats  # LP redundant import as you already imported stats
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
@@ -231,6 +231,7 @@ plt.show()
 res_1s = stats.ttest_1samp(df_CB, popmean=0,alternative='greater')
 #TtestResult(statistic=2.201031832293535, pvalue=0.018072363635736714, df=28)
 
+# LP: this is reduntant with what you have in the script, do not keep multiple versions of the same function around!
 def hypothesis_test_result(p_value, alpha=0.05):
     """
     Determines whether to reject or fail to reject the null hypothesis.
@@ -267,10 +268,12 @@ df_CB.mean() #1.3517
 res_2samp = stats.ttest_ind(df_CB, control_df, equal_var=False)
 
 ##Using the obtained p-value, determines whether to reject or fail to reject the null hypothesis.
+# LP: as the function basically is used only for printing, the print statement could here be included in the function
 print(hypothesis_test_result(res_2samp.pvalue))
 
 ###Calculate the effect size for summarizing the size of the difference between the two groups:
 
+# LP: this is reduntant with what you have in the script, do not keep multiple versions of the same function around!
 def eff_size(group1, group2):
     """
     Calculate Cohen's d for the mean difference between two groups and interpret the effect size.
