@@ -1,3 +1,5 @@
+# LP: pandas and numpy imports required or this will not work
+
 def eff_size(group1, group2):
     """
     Calculate Cohen's d for the mean difference between two groups and interpret the effect size.
